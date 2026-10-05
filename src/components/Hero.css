@@ -1,0 +1,19 @@
+.hero-image{
+  background-image: url('../assets/IMG_2793.JPG');
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 30px;
+}
+.hero-text{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.hero-text p{
+  width: 60%;
+}
