@@ -1,0 +1,100 @@
+.signupContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 150px;
+  font-family: 'Karla', serif;
+  color: #382A23;
+}
+.leftSide,
+.rightSide {
+  flex: 1;
+}
+.leftSide{
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  border-radius: 15px 0px 0px 15px;
+}
+.rightSide {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-color: white;
+  padding: 0px 30px;
+  border-radius: 0px 15px 15px 0px;
+}
+.rightSide p{
+  margin-top: -10px;
+}
+.leftSide img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: inherit;
+}
+.rightSide,
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+label{
+  font-family: 'Karla', serif;
+  color: #382A23;
+  margin-bottom: -5px;
+}
+input {
+  width: 400px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+}
+input:focus{
+  outline: none;
+}
+.passwordLabel{
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.passwordLabel button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 10px; 
+}
+.signBtn{
+  border: none;
+  padding: 12px 40px;
+  background-color: #382A23;
+  color: #fcf8f3;
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.errorMessage{
+  color: red;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .signupContainer{
+    padding: 50px 15px;
+    border-radius: 15px;
+  }
+  .leftSide{
+    display: none;
+  }
+  input{
+    width: 300px;
+  }
+}
