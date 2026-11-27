@@ -12,7 +12,7 @@ app.use(express.json());
 app.use("/api", authRoutes)
 
 const PORT = process.env.PORT || 7000;
-const MONGO_URL = "mongodb://localhost:27017/lume"
+const MONGO_URL = "process.env.MONGO.URI"
 
 app.get("/", (req, res) => {
    res.send("Backend is running")
