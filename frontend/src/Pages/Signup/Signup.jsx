@@ -1,3 +1,4 @@
+import API_URL from '../../config/api'
 import './Signup.css'
 import signup1 from '../../assets/signup2.JPG'
 import { useState } from 'react'
@@ -33,7 +34,7 @@ export function Signup() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:7000/api/signup', {
+      const response = await fetch(`${API_URL}/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
