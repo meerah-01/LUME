@@ -1,8 +1,9 @@
+require("dotenv").config()
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const authRoutes = require("./Routes/authRoutes")
-require("dotenv").config()
+
 
 const app = express();
 
@@ -12,7 +13,7 @@ app.use(express.json());
 app.use("/api", authRoutes)
 
 const PORT = process.env.PORT || 7000;
-const MONGO_URL = "process.env.MONGO_URI"
+const MONGO_URL = process.env.MONGO_URI
 
 app.get("/", (req, res) => {
    res.send("Backend is running")
